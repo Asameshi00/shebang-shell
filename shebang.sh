@@ -1,13 +1,16 @@
 #!/bin/sh
 
+### create shebang ###
 : << USAGE_CREATE_SHEBANG
 ------------------------
 # Change current directory to top of AP Lecture
-$ pwd
-/Users/xxx/AP/Java
 
-# Specify a repository name at the first argument.
-$ checkaoki HelloWorld
+# Specify one language at the first argument.
+$ shebang python
 ------------------------
 USAGE_CREATE_SHEBANG
-echo "aaa"
+function shebang()
+{
+    local env = `which env`
+    local lang = 
+}
