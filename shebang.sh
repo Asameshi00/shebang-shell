@@ -6,6 +6,10 @@
 # Generate different shebangs for different languages.
 # version for only python, ruby 
 
+__author__ = 'AOKI Atsushi'
+__version__ = '1.0.4'
+__date__ = '2022/11/24 (Created: 2016/01/24)'
+
 # Specify one language at the first argument.
 $ shebang python
 ------------------------
@@ -13,12 +17,17 @@ USAGE_CREATE_SHEBANG
 function shebang()
 {
     local env=`which env`
-    local lang=$1
     local date=`date '+%Y/%m/%d'`
+    local where=${env}" "${lang}
 
-    echo "# $env $lang"
+    echo "# $where"
     echo "# -*- coding: utf-8 -*-"
-    echo \n
+    echo " "
+    echo "__author__ = 'YOUR NAME'"
+    echo "__version__ = '1.0.0'"
+    echo "__date__ = '20XX/XX/XX (Created: $date)'"
+    echo " "
 }
 
+lang=$1
 shebang
