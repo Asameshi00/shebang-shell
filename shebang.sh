@@ -6,7 +6,7 @@
 # Generate different shebangs for different languages.
 # version for only python, ruby 
 
-__author__ = 'AOKI Atsushi'
+__author__ = 'Asakura'
 __version__ = '1.0.4'
 __date__ = '2022/11/24 (Created: 2016/01/24)'
 
@@ -23,7 +23,7 @@ function shebang()
     echo "# $where"
     echo "# -*- coding: utf-8 -*-"
     echo " "
-    echo "__author__ = 'YOUR NAME'"
+    echo "__author__ = '$USER'"
     echo "__version__ = '1.0.0'"
     echo "__date__ = '20XX/XX/XX (Created: $date)'"
     echo " "
