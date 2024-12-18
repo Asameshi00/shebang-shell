@@ -22,11 +22,11 @@ function shebang()
 
     echo "# $where"
     echo "# -*- coding: utf-8 -*-"
-    echo " "
+    echo ""
     echo "__author__ = '$USER'"
     echo "__version__ = '1.0.0'"
     echo "__date__ = '20XX/XX/XX (Created: $date)'"
-    echo " "
+    echo ""
 }
 
 lang=$1
